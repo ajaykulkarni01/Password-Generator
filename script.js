@@ -27,7 +27,14 @@ function generatePassword() {
   // Asks for user input
   var length = 0;
   while (length < 8 || length > 128) {
+    // console.log({length})
     length = parseInt(prompt("How many characters would you like your password? Choose between 8 and 128"));
+    // console.log({length})
+    // console.log(length );
+    // If user clicks cancel
+    if(!length){
+      length = 0;
+    }
   }
   // Continues once user input is validated
   confirmNumber = confirm("Will this contain numbers?");
