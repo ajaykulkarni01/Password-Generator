@@ -1,34 +1,54 @@
 # 03 JavaScript: Password Generator
 
-For this project, I've developed a portfolio page from scratch.
+For this project, I've developed an application that enables employees to generate random passwords based on criteria that they’ve selected.
 
-This is my second week of the bootcamp. In this week, I learnt some of the advanced CSS skills like flexbox, media queries, and CSS variables. I've used these skills while working on my portfolio.
+This is my third week of the bootcamp. In this week, I learnt some of the advanced Javascript skills which I've implemented while working on this application.
 
-## 💡 Development details
+I was presented with the starter code and following acceptance criteria
 
-In the header section of the page you can find my name and navigation links. The navigation links are Home, About, Portfolio and Contact. I've created the favicon for the page using Photoshop. It is a logo that starts from the letter "A".
+## Acceptance Criteria
 
-In the 'Head' element of the page I've linked the webfonts and Font awesome as I've used this in the page.
+```
+GIVEN I need a new, secure password
+WHEN I click the button to generate a password
+THEN I am presented with a series of prompts for password criteria
+WHEN prompted for password criteria
+THEN I select which criteria to include in the password
+WHEN prompted for the length of the password
+THEN I choose a length of at least 8 characters and no more than 128 characters
+WHEN asked for character types to include in the password
+THEN I confirm whether or not to include lowercase, uppercase, numeric, and/or special characters
+WHEN I answer each prompt
+THEN my input should be validated and at least one character type should be selected
+WHEN all prompts are answered
+THEN a password is generated that matches the selected criteria
+WHEN the password is generated
+THEN the password is either displayed in an alert or written to the page
+```
 
-After header, I've added the Herom banner image. This is my recent photo but I had to do lot of editing to make the perfect hero banner image. I've used the Photoshop to edit hero banner image. I've used the display-flex property to make the hero banner responsive.
+## 💡 Technical Features:
 
-Next, it was the About me section. I've used font awesome icon to highlight my 3 main skills - Graphic design, Web development and Multimedia. The page was looking very dull without any image for this section. Hence, I though of using the font awesome icons.
-
-After this it was the portfolio section. To make this section responsive I've used the flexbox model. Out of the 5 projects, only first project is ready at this point. Hence, I've added the placeholder images for 4 projects and linked them to the project 1 link-page. I will update this with the latest links as I'll progress through the bootcamp.
-
-Next, we have contact us and footer section. This section has all my current contact details and the link of my social media pages like - Facebook, Linkedin and Github.
-
-I've tested and confirmed that the page is responsive through various screen resolutions and devices.
+- Variable declaration area
+- An event listener (onclick) called generatePassword
+  - This will prompt the user for input between 8-128
+  - This variable is changed to an interger using ParseInt()
+  - This will validate that the input is a number within range, or is a number
+  - This then uses the input to determine the types (or choices) or letters of characters used, using an if statement
+  - This then assigns values to the variables using arrays for character, number or alphabet
+- Another variable is created to concatenate the above variables
+- A for loop will loop through the enter prompt until it reaches the number entered by user.
+- A password variable takes the value from the for loop, and converts it to a string.
+- The string value then populates into the text area for the user using a UserInput function.
 
 ## Mock-up
 
-Please find below the page mock-up:
+Please find below the application screenshot:
 
-![Portfolio page mock-up.](./assets/img/screenshot.png)
+![Password Generator Application Screenshot.](Assets/img/03-javascript-homework-demo.png)
 
 ## 🔗 Project Link
 
-https://ajaykulkarni01.github.io/Portfolio/
+https://ajaykulkarni01.github.io/Password-Generator/
 
    <br/>
 
